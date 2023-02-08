@@ -6,7 +6,7 @@
 
 ![preview](./.github/preview.png)
 
-[🔗 Clique aqui para acessar](https://julietedias.github.io/nlw-esports-desafio-extra/)
+🔗 <a href="https://julietedias.github.io/nlw-esports-desafio-extra/" target="_blank">Clique aqui para acessar</a>
 
 ## 💻 Tecnologias
 - HTML
