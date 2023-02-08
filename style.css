@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 160%;
+}
+
+body {
+    background: url('./assets/bg.jpg') top center no-repeat;
+    background-size: 100% auto;
+    background-color: #121214;
+}
+
+header {
+    height: 152px;
+    padding-top: 32px;
+}
+
+header div a {
+    width: 120px;
+    margin: auto;
+    display: flex;
+    padding: 4px;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%); 
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+header div a:hover {
+    transform: scale(1.1);
+}
+
+header img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    max-width: 520px;
+    width: 90%;
+    display: grid;
+    gap: 24px;
+    margin: 32px auto;
+}
+
+section {
+    color: #FFFFFF;
+    padding-top: 4px;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    border-radius: 10px;
+}
+
+section div {
+    padding: 24px 32px 32px;
+    background-color: #262629;
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+section p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #C1C1C1;
+    margin-bottom: 24px;
+    letter-spacing: -0.18px;
+}
+
+section ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+header div, section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+section ul li img {
+    width: 100px;
+    border-radius: 8px;
+    border: 1px solid #555555;
+}
+
+
+/* animation */
+
+header div {
+    animation: appear 2s .7s backwards;
+}
+
+main section {
+    animation: toRight .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+
+main section:nth-child(2) {
+    animation-delay: .4s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .7s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes toRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
